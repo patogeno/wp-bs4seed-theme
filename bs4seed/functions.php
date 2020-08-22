@@ -1,5 +1,7 @@
 <?php
 
+require_once('assets/php/bs4navwalker.php');
+
 /* ---- Theme Support Features ---- */
 if (! function_exists('bs4seed_setup') ):
    function bs4seed_setup() {
