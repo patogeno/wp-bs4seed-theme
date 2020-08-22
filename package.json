@@ -1,0 +1,45 @@
+{
+  "name": "wp-bs4seed-theme",
+  "version": "1.0.0",
+  "description": "Wordpress Theme Seed",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "config": "node config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patogeno/wp-bs4seed-theme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "seed",
+    "gulp",
+    "bootstrap4"
+  ],
+  "author": "Patricio Soto Kort",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patogeno/wp-bs4seed-theme/issues"
+  },
+  "homepage": "https://github.com/patogeno/wp-bs4seed-theme#readme",
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-wait": "0.0.2",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "merge-stream": "^2.0.0",
+    "readline-sync": "^1.4.10"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
