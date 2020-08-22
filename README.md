@@ -6,7 +6,7 @@ The objectives of this project are:
 - To provide a seed for Wordpress Themes that can jumpstart your development
 - To have at hand different tools and scripts such as Gulp tasks, typical Wordpress functions and Sass compilation including Bootstrap
 
-The project considers you will have a developemnt folder with the files on this repository and a webserver with a Wordpress installation in your local computer.
+The project considers you will have a development folder with the files on this repository and a webserver with a Wordpress installation in your local computer.
 
 ## Installation
 1. Go to your local projects' folder and clone seed:
