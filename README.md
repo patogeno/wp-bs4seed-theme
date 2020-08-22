@@ -1,2 +1,38 @@
 # wp-bs4seed-theme
 Wordpress Theme Seed that uses Bootstrap 4
+
+## Introduction
+The objectives of this project are:
+- To provide a seed for Wordpress Themes that can jumpstart your development
+- To have at hand different tools and scripts such as Gulp tasks, typical Wordpress functions and Sass compilation including Bootstrap
+
+The project considers you will have a developemnt folder with the files on this repository and a webserver with a Wordpress installation in your local computer.
+
+## Installation
+1. Go to your local projects' folder and clone seed:
+`git clone https://github.com/patogeno/wp-bs4seed-theme.git`
+
+2. Download and install node.js and npm if you have not done it yet.
+[Get npm](https://www.npmjs.com/get-npm)
+
+3. Run `npm install`. This will install all dependencies inside node_modules folder.
+
+4. Run `npm run config`. This script will ask you for the slug name of your theme and the folder location where your compiled theme will be copied.
+
+Ready to go! Start coding.
+
+## Interesting Code
+### Configuration with prompted questions
+Check config.js that contains a script to ask and modify variables inside config.json
+Config.json is expected to contain important configuration variables. For now, it only holds your theme slug and server folder. These are used in gulpfile.js.
+
+### Gulp tasks
+Gulp is great to automate tasks. The tasks currently programmed are:
+- **imageminTask** minimises jpg, png and svg files inside [Asset Images folder](bs4seed/assets/images/)
+- **imageOptimiser** optimises images that are copied inside [image-optimiser])(image-optimiser/in/)
+- **sassTask** compiles [Sass files](bs4seed/assets/sass/) to main.css into CSS assets folder
+- **mainVersionUpdate** updates the style cache number inside [functions.php](bs4seed/functions.php) to ensure CSS file is reloaded by browsers when updated.
+- **uglifyTask** merges and minimises Javascript files inside [Asset js folder]((bs4seed/assets/js/))
+- **rootFiles** copies modified files in the [root folder](bs4seed/) 
+- **additionalAssets** copies modified files of other assets such as fonts and php files
+
