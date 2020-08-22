@@ -1,2 +1,5 @@
 node_modules/
-image-optimiser/
+image-optimiser/in/*
+image-optimiser/out/*
+!image-optimiser/in/.gitkeep
+!image-optimiser/out/.gitkeep
