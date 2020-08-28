@@ -21,6 +21,22 @@ The project considers you will have a development folder with the files on this 
 
 Ready to go! Start coding.
 
+## Folder Structure of Theme
+```
+bs4seed          # root theme folder
+├── assets
+│   ├── fonts
+│   ├── images
+│   ├── js
+│   ├── php
+│   ├── css      # contains compiled styles in built theme
+│   └── sass     # not part of built theme
+├── style.css
+├── functions.php
+└── index.php
+└── ...          # templates and screenshot.png
+```
+
 ## Interesting Code
 ### Configuration with prompted questions
 Check config.js that contains a script to ask and modify variables inside config.json  
