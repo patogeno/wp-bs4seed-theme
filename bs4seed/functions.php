@@ -21,7 +21,9 @@ function register_bs4seed_menus(){
    register_nav_menus (
       array(
          'primary' => __('Primary Menu'),
-         'footer-navigation' => __('Footer Menu'),
+         'footer-navigation-left' => __('Left Footer Menu'),
+         'footer-navigation-middle' => __('Middle Footer Menu'),
+         'footer-navigation-right' => __('Right Footer Menu'),
       )
    );
 }
@@ -31,7 +33,7 @@ add_action('init', 'register_bs4seed_menus');
 
 function bs4seed_scripts() {
 
-   $cacheNumber = '1598581379651';
+   $cacheNumber = '1598610168961';
    // Styles
    wp_enqueue_style('bs4seed_styles', get_stylesheet_uri(), array(), '1.0.0' );
    wp_enqueue_style('bs4seed_main' , get_template_directory_uri() . '/assets/css/main.css', array(), $cacheNumber );
