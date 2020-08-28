@@ -1,6 +1,8 @@
 <?php
 
 require_once('assets/php/bs4navwalker.php');
+require_once('assets/php/utilities.php');
+require_once('assets/php/customizer.php');
 
 /* ---- Theme Support Features ---- */
 if (! function_exists('bs4seed_setup') ):
@@ -29,7 +31,7 @@ add_action('init', 'register_bs4seed_menus');
 
 function bs4seed_scripts() {
 
-   $cacheNumber = '1597913380056';
+   $cacheNumber = '1598581379651';
    // Styles
    wp_enqueue_style('bs4seed_styles', get_stylesheet_uri(), array(), '1.0.0' );
    wp_enqueue_style('bs4seed_main' , get_template_directory_uri() . '/assets/css/main.css', array(), $cacheNumber );

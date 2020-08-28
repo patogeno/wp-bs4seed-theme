@@ -29,7 +29,7 @@
                 ?>
             </nav>
             <nav class="navbar-main navbar navbar-expand-lg navbar-dark justify-content-between">
-                <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php bloginfo('template_url');?>/assets/images/logo.svg" alt="Logo"/></a>
+                <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo bs4seed_get_theme_mod( 'bs4seed_logo', get_template_directory_uri().'/assets/images/logo.svg'); ?>" alt="Logo" /></a>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

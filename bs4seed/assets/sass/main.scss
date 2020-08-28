@@ -5,3 +5,11 @@
 @import 'bootstrap-custom';
 @import 'wordpress';
 
+/* HEADER */
+#bs4seed-header {
+  .navbar-brand {
+    img.logo {
+        height: 10rem;
+    }
+  }
+}
