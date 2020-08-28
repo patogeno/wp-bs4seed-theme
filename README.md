@@ -36,3 +36,6 @@ Gulp is great to automate tasks. The tasks currently programmed are:
 - **rootFiles** copies modified files in the [root folder](bs4seed/) 
 - **additionalAssets** copies modified files of other assets such as fonts and php files
 
+### Wordpress Customizer
+Check [customizer.php](bs4seed/assets/php/customizer.php) to learn how to add sections, settings and controls in the Customizer section to define your own modifications in your theme.
+In addition, [utilities.php](bs4seed/assets/php/utilities.php) provides a function to define a default value when theme_mod from Customizer is requested.
