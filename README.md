@@ -23,7 +23,7 @@ Ready to go! Start coding.
 
 ## Interesting Code
 ### Configuration with prompted questions
-Check config.js that contains a script to ask and modify variables inside config.json
+Check config.js that contains a script to ask and modify variables inside config.json  
 Config.json is expected to contain important configuration variables. For now, it only holds your theme slug and server folder. These are used in gulpfile.js.
 
 ### Gulp tasks
@@ -37,5 +37,9 @@ Gulp is great to automate tasks. The tasks currently programmed are:
 - **additionalAssets** copies modified files of other assets such as fonts and php files
 
 ### Wordpress Customizer
-Check [customizer.php](bs4seed/assets/php/customizer.php) to learn how to add sections, settings and controls in the Customizer section to define your own modifications in your theme.
+Check [customizer.php](bs4seed/assets/php/customizer.php) to learn how to add sections, settings and controls in the Customizer section to define your own modifications in your theme.  
 In addition, [utilities.php](bs4seed/assets/php/utilities.php) provides a function to define a default value when theme_mod from Customizer is requested.
+
+### Menu Name as Title
+[utilities.php](bs4seed/assets/php/utilities.php) has a function to get a menu name from a location. It is used in this them to show as menu title in the footer.  
+Thanks [Gayan Priyadarshana/codemixin](https://github.com/gayankd/) to provide the code in [stackoverflow](https://stackoverflow.com/questions/32647965/how-to-display-the-menu-name-of-a-menu-in-wordpress).
