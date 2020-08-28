@@ -23,24 +23,24 @@ Ready to go! Start coding.
 
 ## Folder Structure of Theme
 ```
-bs4seed          # root theme folder
+bs4seed            # root theme folder
 ├── assets
 │   ├── fonts
 │   ├── images
 │   ├── js
 │   ├── php
-│   ├── css      # contains compiled styles in built theme
-│   └── sass     # not part of built theme
+│   ├── css        # contains compiled styles in built theme
+│   └── sass       # not part of built theme
 ├── style.css
 ├── functions.php
 └── index.php
-└── ...          # templates and screenshot.png
+└── ...            # templates and screenshot.png
 ```
 
 ## Interesting Code
 ### Configuration with prompted questions
-Check config.js that contains a script to ask and modify variables inside config.json  
-Config.json is expected to contain important configuration variables. For now, it only holds your theme slug and server folder. These are used in gulpfile.js.
+Check [config.js](config.js) that contains a script to ask and modify variables inside [config.json](config.json)  
+[config.json](config.json) is expected to contain important configuration variables. For now, it only holds your theme slug and server folder. These are used in [gulpfile.js](gulpfile.js).
 
 ### Gulp tasks
 Gulp is great to automate tasks. The tasks currently programmed are:
