@@ -13,3 +13,17 @@ function bs4seed_get_menu_name ($menu_location) {
     $menu_name = (isset($menu_object->name) ? $menu_object->name : '');
     echo esc_html($menu_name);
 }
+
+// Custom wp_nav_menu to add title and nav wrapper
+function bs4seed_wp_nav_menu($args) {
+    if(empty($args) || empty($args['theme_location'])) return;
+    if(empty($args['nav_class'])) $args['nav_class'] = 'navbar navbar-expand';
+    if(!empty($args['title_tag'])):
+    ?>
+<<?php echo $args['title_tag'];?>><?php echo bs4seed_get_menu_name($args['theme_location']);?></<?php echo $args['title_tag'];?>>
+    <?php endif; ?>
+<nav class="<?php echo $args['nav_class']; ?>">
+    <?php wp_nav_menu($args); ?> 
+</nav>
+<?php
+}
