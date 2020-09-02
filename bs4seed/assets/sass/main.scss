@@ -28,14 +28,19 @@
     margin: 0;
   }
 
-  nav {
+  .footer-widget {
     padding: .3rem 0 0 0;
-    ul {
+    ul.menu {
       display: flex;
       flex-direction: column;
-      a {
-        padding: .2rem 0 0 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        a {
+          padding: .2rem 0 0 0;
+        }
       }
+      
     }
   }
 

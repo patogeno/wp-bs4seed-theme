@@ -33,7 +33,7 @@ add_action('init', 'register_bs4seed_menus');
 
 function bs4seed_scripts() {
 
-   $cacheNumber = '1598610168961';
+   $cacheNumber = '1598999608655';
    // Styles
    wp_enqueue_style('bs4seed_styles', get_stylesheet_uri(), array(), '1.0.0' );
    wp_enqueue_style('bs4seed_main' , get_template_directory_uri() . '/assets/css/main.css', array(), $cacheNumber );
@@ -43,3 +43,19 @@ function bs4seed_scripts() {
    wp_enqueue_script( 'bootstrap4', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array('jquery'), 'v4.3.1', true );
 }
 add_action('wp_enqueue_scripts','bs4seed_scripts');
+
+/* ---- Add Widget Area(s) ---- */
+function bs4seed_widgets_init() {
+
+	register_sidebar( array(
+      'name'          => __('Footer Widgets'),
+      'description'   => __('Widgets in footer. Designed to be 3 columns.'),
+		'id'            => 'footer_widgets',
+		'before_widget' => '<div id="%1$s" class="col-6 col-md-3 footer-widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+   ) );
+
+}
+add_action( 'widgets_init', 'bs4seed_widgets_init' );

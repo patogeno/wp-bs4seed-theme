@@ -57,5 +57,5 @@ Check [customizer.php](bs4seed/assets/php/customizer.php) to learn how to add se
 In addition, [utilities.php](bs4seed/assets/php/utilities.php) provides a function to define a default value when theme_mod from Customizer is requested.
 
 ### Menu Name as Title
-[utilities.php](bs4seed/assets/php/utilities.php) has a function to get a menu name from a location. It is used in this them to show as menu title in the footer.  
+[utilities.php](bs4seed/assets/php/utilities.php) has a function to get a menu name from a location. It was previously used to show as menu title in the footer. Now it has been replaced by default menus inserted using widgets. 
 Thanks [Gayan Priyadarshana/codemixin](https://github.com/gayankd/) to provide the code in [stackoverflow](https://stackoverflow.com/questions/32647965/how-to-display-the-menu-name-of-a-menu-in-wordpress).
