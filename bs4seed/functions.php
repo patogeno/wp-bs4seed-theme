@@ -21,9 +21,7 @@ function register_bs4seed_menus(){
    register_nav_menus (
       array(
          'primary' => __('Primary Menu'),
-         'footer-navigation-left' => __('Left Footer Menu'),
-         'footer-navigation-middle' => __('Middle Footer Menu'),
-         'footer-navigation-right' => __('Right Footer Menu'),
+         'top-nav' => __('Header Top Menu')
       )
    );
 }
