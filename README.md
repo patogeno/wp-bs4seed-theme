@@ -39,8 +39,8 @@ bs4seed            # root theme folder
 
 ## Interesting Code
 ### Configuration with prompted questions
-Check [config.js](config.js) that contains a script to ask and modify variables inside [config.json](config.json)  
-[config.json](config.json) is expected to contain important configuration variables. For now, it only holds your theme slug and server folder. These are used in [gulpfile.js](gulpfile.js).
+Check [config.js](config.js) that contains a script to create enviroment variables inside .env.  
+.env is expected to contain important configuration variables. For now, it only holds your theme slug and server folder. These are used in [gulpfile.js](gulpfile.js).
 
 ### Gulp tasks
 Gulp is great to automate tasks. The tasks currently programmed are:
